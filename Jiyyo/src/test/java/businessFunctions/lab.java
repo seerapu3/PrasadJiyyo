@@ -24,7 +24,7 @@ import org.sikuli.script.Screen;
 
 import accelerators.Actiondrivers;
 
-public class LABmodule extends Actiondrivers{
+public class lab extends Actiondrivers{
 	
 		
 	public void login(WebDriver lDriver, String username, String password) throws InterruptedException

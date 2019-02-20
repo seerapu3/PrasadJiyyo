@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Jiyyo" duration-ms="4399" started-at="2019-02-19T13:23:55Z" finished-at="2019-02-19T13:23:59Z">
+  <suite name="Jiyyo" duration-ms="862" started-at="2019-02-20T07:38:06Z" finished-at="2019-02-20T07:38:07Z">
     <groups>
     </groups>
-    <test name="Labmodule test cases" duration-ms="4399" started-at="2019-02-19T13:23:55Z" finished-at="2019-02-19T13:23:59Z">
+    <test name="Labmodule test cases" duration-ms="862" started-at="2019-02-20T07:38:06Z" finished-at="2019-02-20T07:38:07Z">
       <class name="jiyyoTests.LAB_Module">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="setupSuite" is-config="true" duration-ms="66729" started-at="2019-02-19T18:52:48Z" finished-at="2019-02-19T18:53:55Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="setupSuite" is-config="true" duration-ms="43483" started-at="2019-02-20T13:07:23Z" finished-at="2019-02-20T13:08:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="LABcreatebillexistingpatient()[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="LABcreatebillexistingpatient" duration-ms="76" started-at="2019-02-19T18:53:55Z" finished-at="2019-02-19T18:53:55Z">
+        <test-method status="PASS" signature="LABcreatebillexistingpatient()[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="LABcreatebillexistingpatient" duration-ms="50" started-at="2019-02-20T13:08:06Z" finished-at="2019-02-20T13:08:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LABcreatebillexistingpatient -->
-        <test-method status="PASS" signature="LABdcreatebillnewpatient()[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="LABdcreatebillnewpatient" duration-ms="4" started-at="2019-02-19T18:53:55Z" finished-at="2019-02-19T18:53:55Z">
+        <test-method status="PASS" signature="LABdcreatebillnewpatient()[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="LABdcreatebillnewpatient" duration-ms="2" started-at="2019-02-20T13:08:07Z" finished-at="2019-02-20T13:08:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LABdcreatebillnewpatient -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="startTest" is-config="true" duration-ms="4110" started-at="2019-02-19T18:53:55Z" finished-at="2019-02-19T18:53:59Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="startTest" is-config="true" duration-ms="740" started-at="2019-02-20T13:08:07Z" finished-at="2019-02-20T13:08:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestContext)[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="tearDown" is-config="true" duration-ms="1432" started-at="2019-02-19T18:54:00Z" finished-at="2019-02-19T18:54:01Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestContext)[pri:0, instance:jiyyoTests.LAB_Module@1275dab]" name="tearDown" is-config="true" duration-ms="2510" started-at="2019-02-20T13:08:07Z" finished-at="2019-02-20T13:08:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@40454]]>
+                <![CDATA[org.testng.TestRunner@8dcdaa]]>
               </value>
             </param>
           </params>

@@ -11,7 +11,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import accelerators.Base;
-import businessFunctions.LABmodule;
+import businessFunctions.lab;
 public class LAB_Module extends Base {
 	static ExtentTest logger;
 

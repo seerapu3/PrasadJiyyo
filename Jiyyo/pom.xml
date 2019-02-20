@@ -34,7 +34,7 @@
             <configuration>
                <suiteXmlFiles>
                   <!-- TestNG suite XML files -->
-                  <suiteXmlFile>dwuTests.xml</suiteXmlFile>
+                  <suiteXmlFile>jiyyolabmodule.xml</suiteXmlFile>
                </suiteXmlFiles>
             </configuration>
          </plugin>

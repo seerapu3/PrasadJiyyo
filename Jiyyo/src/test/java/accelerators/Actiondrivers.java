@@ -9,64 +9,67 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Actiondrivers extends Base{
 	
-	public void enterTextAtEditor(WebDriver lDriver, By locator, String Text)
-	{
-		WebElement metadescription = lDriver.findElement(locator);
-		lDriver.switchTo().frame(metadescription);
-		WebElement editablemetadescription = lDriver.switchTo().activeElement();
-		copyToClipbord(Text);
-		editablemetadescription.click();
-		editablemetadescription.sendKeys(Keys.chord(Keys.CONTROL, "v"), "");
-		lDriver.switchTo().defaultContent();
-	}
-	
-	public void copyToClipbord(String copyTo)
-	{
-		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-		StringSelection str = new StringSelection(copyTo);
-		clipboard.setContents(str, null );
-	}
-	
-	public void enterMultipleValues(WebDriver lDriver,By locator,String list, int elm)
-	{
-		ArrayList aList= new ArrayList(Arrays.asList(list.split(",")));
-		List < WebElement > values = lDriver.findElements(locator);
-		System.out.println(values.size());
-		System.out.println(aList.size());
+	public static WebDriverWait wait;
 
-		for(int j=0;j<aList.size();j++)
-		{
-			String ptagvalue=String.valueOf(aList.get(j));
-			System.out.println(ptagvalue);
-			values.get(elm).click();
-			values.get(elm).sendKeys(ptagvalue);
-			values.get(elm).sendKeys(Keys.ENTER);
+	/**
+	 * This Method is to perform click operation on (link,button,check box,radio
+	 * button) Before click the element it will wait until the element present.
+	 * 
+
+	 */
+	public static boolean click(By locator, String locatorName)
+			throws Throwable {
+		boolean flag = false;
+		try {
+
+			driver.findElement(locator).click();
+			return true;
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			flag = true;
+			return false;
+		} finally {
+			if (flag) {
+			/*	Reporters.failureReport("Click ", "Unable to click on :"
+						+ locatorName);*/
+			} 
+			else
+			{/*Reporters.SuccessReport("Click ", "able to click on :"
+					+ locatorName);*/
+			}
 		}
-		
 	}
 	
-	public void enterMultipleValues1(WebDriver lDriver,By locator,String list, int elm)
-	{
-		ArrayList aList= new ArrayList(Arrays.asList(list.split(" ")));
-		List < WebElement > values = lDriver.findElements(locator);
-		System.out.println(values.size());
-		System.out.println(aList.size());
+	/**
+	 * This method for type in to text box or text area
+	*/
+	public static boolean type(By locator, String testdata, String locatorName)
+			throws Throwable {
+		boolean flag = false;
+		try {
+			driver.findElement(locator).clear();
+			driver.findElement(locator).sendKeys(testdata);
+			return true;
+		} catch (NoSuchElementException e) {
+			flag = true;
+			return false;
+		} finally {
+			if (flag) {
+				/*Reporters.failureReport("Type ",			
+						"Data typing action is not perform on: " + locatorName+" with data is "+testdata);*/
+				// throw new ElementNotFoundException("", "", "");
 
-		for(int j=0;j<aList.size();j++)
-		{
-			String ptagvalue=String.valueOf(aList.get(j));
-			System.out.println(ptagvalue);
-			values.get(elm).click();
-			values.get(elm).sendKeys(ptagvalue);
-			values.get(elm).sendKeys(Keys.ENTER);
+			} else {
+				//Reporters.SuccessReport("Type ","Data typing action is performed on:" + locatorName+" with data is "+testdata);
+			}
 		}
-		
 	}
-
-
+	
 }

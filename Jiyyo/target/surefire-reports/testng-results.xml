@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Jiyyo" duration-ms="1275" started-at="2019-02-20T07:13:39Z" finished-at="2019-02-20T07:13:41Z">
+    <groups>
+    </groups>
+    <test name="Labmodule test cases" duration-ms="1275" started-at="2019-02-20T07:13:39Z" finished-at="2019-02-20T07:13:41Z">
+      <class name="jiyyoTests.LAB_Module">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:jiyyoTests.LAB_Module@18c7aca]" name="setupSuite" is-config="true" duration-ms="54740" started-at="2019-02-20T12:42:45Z" finished-at="2019-02-20T12:43:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method status="PASS" signature="LABcreatebillexistingpatient()[pri:0, instance:jiyyoTests.LAB_Module@18c7aca]" name="LABcreatebillexistingpatient" duration-ms="32" started-at="2019-02-20T12:43:40Z" finished-at="2019-02-20T12:43:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LABcreatebillexistingpatient -->
+        <test-method status="PASS" signature="LABdcreatebillnewpatient()[pri:0, instance:jiyyoTests.LAB_Module@18c7aca]" name="LABdcreatebillnewpatient" duration-ms="1" started-at="2019-02-20T12:43:40Z" finished-at="2019-02-20T12:43:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LABdcreatebillnewpatient -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:jiyyoTests.LAB_Module@18c7aca]" name="startTest" is-config="true" duration-ms="1157" started-at="2019-02-20T12:43:40Z" finished-at="2019-02-20T12:43:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestContext)[pri:0, instance:jiyyoTests.LAB_Module@18c7aca]" name="tearDown" is-config="true" duration-ms="798" started-at="2019-02-20T12:43:41Z" finished-at="2019-02-20T12:43:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1bd8fca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- jiyyoTests.LAB_Module -->
+    </test> <!-- Labmodule test cases -->
+  </suite> <!-- Jiyyo -->
+</testng-results>
